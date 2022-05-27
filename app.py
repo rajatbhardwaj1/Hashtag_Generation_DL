@@ -8,6 +8,8 @@ app = Flask(__name__)
 def my_form():
     if request.method == "POST":
         t = request.form["text"]
+        if t== "":
+            t = "Error404 : No text found! "
         return redirect(url_for("my_form_post" , generated_text =  t  ))
     else:
         return render_template("index.html" )

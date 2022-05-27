@@ -38,6 +38,31 @@ ol {
     line-height: 180%;
 }
 
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 7px 30px;
+    background: #36332E;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    background: #36332E;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
 strong {}
 
 a {
@@ -219,6 +244,22 @@ hr {
     letter-spacing: -1px;
     font-size: 36px;
     color: #222222;
+}
+
+#content button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 7px 30px;
+    background: #36332E;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    background: #36332E;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
 }
 
 #content .subtitle {
