@@ -17,5 +17,5 @@ def my_form():
 def my_form_post(generated_text):
     return render_template("result.html" , result = generated_text)
 
-
-app.run(debug= True)
+if __name__ == "__main__" :
+    app.run(debug= True)
