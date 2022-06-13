@@ -1,7 +1,7 @@
 from crypt import methods
 from flask import Flask, redirect, render_template , request, url_for
 from pyrfc3339 import generate
-from keybert import KeyBERT
+import yake
 
 doc = """
          Supervised learning is the machine learning task of learning a function that
@@ -15,20 +15,22 @@ doc = """
          the learning algorithm to generalize from the training data to unseen situations in a
          'reasonable' way (see inductive bias).
       """
-kw_model = KeyBERT(model="all-MiniLM-L6-v2")
-keywords = kw_model.extract_keywords(doc)
-
+kw_extractor = yake.KeywordExtractor(top=10, stopwords=None)
 app = Flask(__name__)
 
 @app.route("/", methods = ["GET" , "POST"] )
 def my_form():
     if request.method == "POST":
-        t = request.form["text"]
+        doc = request.form["text"]
+        keywords = kw_extractor.extract_keywords(doc)
         t = ""
+        for word , cs in keywords:
+            t = t + "#"+word+" " 
+
         
 
-        if t== "":
-            t = "Error404 : No text found! "
+        if doc== "":
+            doc = "Error404 : No text found! "
         return redirect(url_for("my_form_post" , generated_text =  t  ))
     else:
         return render_template("index.html" )
