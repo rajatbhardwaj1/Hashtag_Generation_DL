@@ -15,7 +15,7 @@ doc = """
          the learning algorithm to generalize from the training data to unseen situations in a
          'reasonable' way (see inductive bias).
       """
-kw_model = KeyBERT()
+kw_model = KeyBERT(model="all-MiniLM-L6-v2")
 keywords = kw_model.extract_keywords(doc)
 
 app = Flask(__name__)
