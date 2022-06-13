@@ -1,4 +1,7 @@
+from crypt import methods
 from flask import Flask, redirect, render_template , request, url_for
+from pyrfc3339 import generate
+from keybert import KeyBERT
 
 doc = """
          Supervised learning is the machine learning task of learning a function that
@@ -12,7 +15,8 @@ doc = """
          the learning algorithm to generalize from the training data to unseen situations in a
          'reasonable' way (see inductive bias).
       """
-
+kw_model = KeyBERT(model="all-MiniLM-L6-v2")
+keywords = kw_model.extract_keywords(doc)
 
 app = Flask(__name__)
 
