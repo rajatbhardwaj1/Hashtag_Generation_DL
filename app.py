@@ -15,19 +15,16 @@ doc = """
          the learning algorithm to generalize from the training data to unseen situations in a
          'reasonable' way (see inductive bias).
       """
-kw_model = KeyBERT(model="all-MiniLM-L6-v2")
-keywords = kw_model.extract_keywords(doc)
+
 
 app = Flask(__name__)
 
 @app.route("/", methods = ["GET" , "POST"] )
 def my_form():
     if request.method == "POST":
-        doc = request.form["text"]
-        keywords = kw_model.extract_keywords(doc)
+        t = request.form["text"]
         t = ""
-        for word , cossim  in keywords:
-            t = t + "#" + word 
+        
 
         if t== "":
             t = "Error404 : No text found! "
