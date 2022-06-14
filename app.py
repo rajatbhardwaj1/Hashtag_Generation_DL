@@ -29,8 +29,8 @@ def my_form():
 
         
 
-        if doc== "":
-            doc = "Error404 : No text found! "
+        if t== "":
+            t = "No Hashtags Generated!! Please enter a valid text."
         return redirect(url_for("my_form_post" , generated_text =  t  ))
     else:
         return render_template("index.html" )

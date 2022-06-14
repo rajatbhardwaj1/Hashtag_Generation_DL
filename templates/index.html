@@ -11,6 +11,8 @@
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
     <link href="/static/default.css" rel="stylesheet" type="text/css" media="all" />
+
+    <script type="text/javascript" scr="/static/default.js"></script>
     <!--[if IE 6]>
 <link href="default_ie6.css" rel="stylesheet" type="text/css" />
 <![endif]-->
@@ -34,11 +36,7 @@
                 </ul>
             </div>
         </div>
-        <div id="banner">
-            <div class="img-border">
-                <a href="#"><img src="https://wallpaperaccess.com/full/1728957.jpg" width="1120" height="500" alt="" /></a>
-            </div>
-        </div>
+
     </div>
     <div id="wrapper">
         <div id="page-wrapper">
@@ -47,11 +45,17 @@
                     <h2>Welcome to #HashGen!</h2>
                     <p>This is <strong>#HashGen </strong>, a DeepLearning based model, designed by Rajat Bhardwaj.
                         <p><img src="https://prod-central-prod-sm-site-media.s3.eu-west-1.amazonaws.com/sm/public/wp-content/uploads/2021/05/21071248/Instagram-hashtag-analytics.png" alt="" width="300" height="200" class="alignleft" /> </p>
-                        <p>Dummy text : At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
-                            in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
-                            id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
-                            non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</p>
-                        <p class="button-style"><a href="#">More Details</a></p>
+                        <p>
+
+
+                            Extracting keywords from texts has become a challenge for individuals and organizations as the information grows in complexity and size. There are many open source trained model such as KEYBERT, YAKE!, Rake, TextRank That can be used to extract keywords
+                            from text. Our task is, given a peice of text, we have to generate the corresponding hashtags. Now hashtags are nothing but the important keyphrases which are related to that text. So I have chosen the YAKE model to generate
+                            the hashtags. The only limitation that this model has that it provides only those keyphrases that occur in the text. I will be improving my model to generate the phrases which do not occur in the given text and are closely
+                            related to that text.
+
+
+                        </p>
+                        <p class="button-style"><a href="http://yake.inesctec.pt/">More Details</a></p>
                 </div>
                 <div id="sidebar">
                     <h2>Similar Models</h2>
@@ -73,23 +77,55 @@
                     <input style="height: 40px;font-size: 14pt ;width: 1000px;" name="text" id="input">
                     <br>
 
-                    <p>
-                        <div id=submit_button>
-                            <input type="submit" value="SUBMIT TEXT"></input>
-                        </div>
-                    </p>
+
+                    <div id=submit_button>
+                        <input type="submit" value="SUBMIT TEXT"></input>
+                    </div>
+
 
                 </form>
             </center>
             <br>
         </div>
     </div>
+    <div>
+
+
+    </div>
+
     <div id="footer-bg">
         <div id="footer-content" class="container">
+            <p>
+                <h1 style="background-color:white;">
+                    <center>
+                        SOME EXAMPLES TO TEST THE APP.
+                    </center>
+            </p>
+
+            </h1>
+            <h3>
+
+                <div id="column1"> In what the White House billed as a major address, Biden once again pleaded with Congress to act. “I support the bipartisan efforts that include a small group of Democrats and Republican senators trying to find a way," he said in evening
+                    remarks from the White House. "But my God — the fact that the majority of the Senate Republicans don’t want any of these proposals even to be debated or come up for a vote, I find it unconscionable.”
+
+                </div>
+                <div id="column2">Pollution is a term which even kids are aware of these days. It has become so common that almost everyone acknowledges the fact that pollution is rising continuously. The term ‘pollution’ means the manifestation of any unsolicited foreign
+                    substance in something. When we talk about pollution on earth, we refer to the contamination that is happening of the natural resources by various pollutants.</div>
+                <div id="column3">Pets are a great blessing in anyone’s life. They are the only ones who love us unconditionally. Pets always offer us everything they have without asking for anything in return. The main aim of any pet’s life is to make their owner happy.
+                    Nowadays, even the term ‘owner’ is changing. People prefer their pets as kids and to themselves as parents.This is how the relationship between pets is evolving. People treat them no less than humans. </div>
+                <div id="column4">
+                    Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective " in the stories, Holmes is known for his proficiency with observation, deduction, forensic science and logical
+                    reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.
+                </div>
+            </h3>
+
 
         </div>
     </div>
 
 </body>
+
+
+</html>
 
 </html>
