@@ -1,4 +1,5 @@
 from crypt import methods
+from unittest import result
 from flask import Flask, redirect, render_template , request, url_for
 from pyrfc3339 import generate
 import yake
@@ -20,20 +21,20 @@ app = Flask(__name__)
 
 @app.route("/", methods = ["GET" , "POST"] )
 def my_form():
+    t = ""
+
     if request.method == "POST":
-        doc = request.form["text"]
-        keywords = kw_extractor.extract_keywords(doc)
         t = ""
+        doc = request.form["text"]
+        doc = doc.lower()
+        keywords = kw_extractor.extract_keywords(doc)
         for word , cs in keywords:
             t = t + "#"+word+" " 
 
-        
-
         if t== "":
             t = "No Hashtags Generated!! Please enter a valid text."
-        return redirect(url_for("my_form_post" , generated_text =  t  ))
-    else:
-        return render_template("index.html" )
+        
+    return render_template("index.html",  result1 = t )
 
 
 @app.route("/result/<generated_text>", methods = ["GET" ])
