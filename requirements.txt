@@ -1,7 +1,7 @@
 Flask==2.1.2
 pyRFC3339==1.1
 yake==0.4.8
-transformers==4.3.3 
+transformers==3.4.0
 sentencepiece==0.1.95
 datasets==2.4.0
 torchtext==0.13.0
