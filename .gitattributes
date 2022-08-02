@@ -1,2 +1,0 @@
-*pt filter=lfs diff=lfs merge=lfs -text
-hashtag_model_final.pt filter=lfs diff=lfs merge=lfs -text
