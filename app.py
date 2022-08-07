@@ -1,8 +1,14 @@
+from argparse import Namespace
 from crypt import methods
 from unittest import result
 from flask import Flask, redirect, render_template , request, url_for
 from pyrfc3339 import generate
 import yake
+from  GeneratorModel import GeneratorModel
+import argparse
+import torch
+import pandas as pd
+from transformers import AutoTokenizer, BartForConditionalGeneration
 
 doc = """
          Supervised learning is the machine learning task of learning a function that
@@ -16,6 +22,8 @@ doc = """
          the learning algorithm to generalize from the training data to unseen situations in a
          'reasonable' way (see inductive bias).
       """
+generator = GeneratorModel(Namespace(beam_size=5, decoder_early_stopping=True, decoder_min_length=1, length_penalty=0.6, model_path='hashtag_model_final.pt', no_repeat_ngram_size=3), "hashtag_model_final.pt")
+
 kw_extractor = yake.KeywordExtractor(top=10, stopwords=None)
 app = Flask(__name__)
 
