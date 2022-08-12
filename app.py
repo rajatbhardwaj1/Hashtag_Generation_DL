@@ -35,10 +35,8 @@ def my_form():
         t = ""
         doc = request.form["text"]
         doc = doc.lower()
-        keywords = kw_extractor.extract_keywords(doc)
-        for word , cs in keywords:
-            t = t + "#"+word+" " 
-
+        t = generator.generate(doc) 
+       
         if t== "":
             t = "No Hashtags Generated!! Please enter a valid text."
         
