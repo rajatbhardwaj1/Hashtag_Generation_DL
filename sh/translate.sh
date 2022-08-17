@@ -24,8 +24,5 @@ python3 -u ../translate.py \
     -n_best 20 \
     -batch_size 64 \
     -gpu 0 > log/translate_${1%.pt}.log  \
-&& python -u ../evaluate.py \
-    -tgt ${data_prefix}/${dataset}/test_tag.txt \
-    -pred prediction/${1/%pt/txt}  \
-    >> log/translate_${1%.pt}.log &
+
 
