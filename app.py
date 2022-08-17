@@ -42,7 +42,13 @@ def my_form():
                 t = t + " #" + hashtag
 
         # if option == "stance":
-            # t = generator.generate(doc)
+        #     t = generator.generate(doc)
+        if option == "microblog":
+            file1 = open("helper.txt" , "w")
+            file1.write(doc)
+            file1.close()
+
+
 
         if t== "":
             t = "No Hashtags Generated!! Please enter a valid text."
