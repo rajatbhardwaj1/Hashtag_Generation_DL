@@ -43,7 +43,7 @@
             <div id="page">
                 <div id="content">
                     <h2>Welcome to #HashGen!</h2>
-                    <p>This is <strong>#HashGen </strong>, a DeepLearning based model, designed by Rajat Bhardwaj.
+                    <p>This is <strong>#HashGen </strong>, a DeepLearning based model.
                         <p><img src="https://prod-central-prod-sm-site-media.s3.eu-west-1.amazonaws.com/sm/public/wp-content/uploads/2021/05/21071248/Instagram-hashtag-analytics.png" alt="" width="300" height="200" class="alignleft" /> </p>
                         <p>
 
@@ -70,27 +70,66 @@
                 </div>
             </div>
         </div>
-        <div id="model">
-            <center>
-                <h1>Input Text Below</h1>
-                <form method="POST">
-                    <input style="height: 40px;font-size: 14pt ;width: 1000px;" name="text" id="input">
-                    <br>
 
+
+        <div id="model">
+
+            <center>
+
+
+            </center>
+
+            <form method="POST">
+                <center>
+
+                    <label>
+                        <input type="radio" name="test" value="yake" checked>
+                        <img src="static/images/Light Purple Initial SK Logo.png" alt="Option 1">
+                      </label>
+
+                    <label>
+                        <input type="radio" name="test" value="stance">
+                        <img src="static/images/Light Purple Initial SK Logo(1).png" alt="Option 2">
+                      </label>
+                    <label>
+                        <input type="radio" name="test" value="microblog">
+                        <img src="static/images/Light Purple Initial SK Logo(2).png" alt="Option 3">
+                      </label>
+
+                    <h1>Input Text Below</h1>
+
+                    <input style="height: 40px;font-size: 14pt ;width: 1000px;" name="text" id="input">
+                </center>
+                <center>
 
                     <div id=submit_button>
+
                         <input type="submit" value="SUBMIT TEXT"></input>
                     </div>
+                </center>
+                <br>
+                <center>
+
+
+                </center>
+
+
+
+                <br>
+                <br>
+                <center>
+
                     <div id="content1">
                         <h1>Generated Hashtags</h1>
                         <div id="result">
                             <p>{{result1}}</p>
                         </div>
                     </div>
+                </center>
 
 
-                </form>
-            </center>
+            </form>
+
             <br>
         </div>
     </div>
@@ -98,6 +137,7 @@
 
 
     </div>
+
 
     <div id="footer-bg">
         <div id="footer-content" class="container">

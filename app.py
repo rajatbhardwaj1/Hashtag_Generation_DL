@@ -1,5 +1,6 @@
 from argparse import Namespace
 from crypt import methods
+import hashlib
 from unittest import result
 from flask import Flask, redirect, render_template , request, url_for
 from pyrfc3339 import generate
@@ -30,12 +31,18 @@ app = Flask(__name__)
 @app.route("/", methods = ["GET" , "POST"] )
 def my_form():
     t = ""
-
+ 
     if request.method == "POST":
-        t = ""
         doc = request.form["text"]
         doc = doc.lower()
-        t = generator.generate(doc) 
+        option = request.form['test']
+        if option == "yake":
+            hashtaglist = kw_extractor.extract_keywords(doc)
+            for hashtag, cs in hashtaglist:
+                t = t + " #" + hashtag
+
+        if option == "stance":
+            t = generator.generate(doc)
        
         if t== "":
             t = "No Hashtags Generated!! Please enter a valid text."

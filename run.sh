@@ -1,2 +1,2 @@
 export FLASK_APP=app.py
-flask run -h localhost -p 6003
+flask run -h localhost -p 6006
