@@ -1,3 +1,4 @@
+from __future__ import division, unicode_literals
 from argparse import Namespace
 from crypt import methods
 import hashlib
@@ -11,7 +12,6 @@ import torch
 import pandas as pd
 from transformers import AutoTokenizer, BartForConditionalGeneration
 #!/usr/bin/env python
-from __future__ import division, unicode_literals
 import argparse
 
 from onmt.translate.Translator import make_translator
