@@ -10,7 +10,22 @@ import argparse
 import torch
 import pandas as pd
 from transformers import AutoTokenizer, BartForConditionalGeneration
+#!/usr/bin/env python
+from __future__ import division, unicode_literals
+import argparse
 
+from onmt.translate.Translator import make_translator
+
+
+import onmt.io
+import onmt.translate
+import onmt
+import onmt.ModelConstructor
+import onmt.modules
+import onmt.opts
+import os
+import time
+import re
 doc = """
          Supervised learning is the machine learning task of learning a function that
          maps an input to an output based on example input-output pairs. It infers a
@@ -47,6 +62,13 @@ def my_form():
             file1 = open("helper.txt" , "w")
             file1.write(doc)
             file1.close()
+            opt = Namespace(alpha=0.0, attn_debug=False, batch_size=64, beam_size=30, beta=-0.0, block_ngram_repeat=0, conversation='commentsfile.txt', coverage_penalty='none', data_type='text', dump_beam='', dynamic_dict=False, gpu=0, ignore_when_blocking=[], length_penalty='none', log_file='', max_length=10, max_sent_length=None, min_length=0, model='saved_models/Twitter_BiAttEncoder_rnn_200emb_seed100_acc_53.76_ppl_34.21_e9.pt', n_best=20, output='outputfile.txt', replace_unk=False, report_bleu=False, report_rouge=False, sample_rate=16000, share_vocab=False, src='helper.txt', src_dir='', stepwise_penalty=False, tgt=None, verbose=False, window='hamming', window_size=0.02, window_stride=0.01)
+            translator = make_translator(opt, report_score=True)
+            translator.translate(opt.src_dir, opt.src, opt.conversation, opt.tgt, opt.batch_size, opt.attn_debug)
+
+
+
+
 
 
 

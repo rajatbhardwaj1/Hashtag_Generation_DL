@@ -16,9 +16,10 @@ import time
 import re
 
 def main(opt):
-    translator = make_translator(opt, report_score=True)
-    translator.translate(opt.src_dir, opt.src, opt.conversation, opt.tgt,
-                         opt.batch_size, opt.attn_debug)
+    print(opt)
+    # translator = make_translator(opt, report_score=True)
+    # translator.translate(opt.src_dir, opt.src, opt.conversation, opt.tgt,
+    #                      opt.batch_size, opt.attn_debug)
 
 
 if __name__ == "__main__":
@@ -29,4 +30,5 @@ if __name__ == "__main__":
     onmt.opts.translate_opts(parser)
 
     opt = parser.parse_args()
+    # print(opt)
     main(opt)
