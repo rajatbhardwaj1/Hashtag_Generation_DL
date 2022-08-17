@@ -23,7 +23,7 @@ doc = """
          the learning algorithm to generalize from the training data to unseen situations in a
          'reasonable' way (see inductive bias).
       """
-generator = GeneratorModel(Namespace(beam_size=5, decoder_early_stopping=True, decoder_min_length=1, length_penalty=0.6, model_path='hashtag_model_final.pt', no_repeat_ngram_size=3), "hashtag_model_final.pt")
+# generator = GeneratorModel(Namespace(beam_size=5, decoder_early_stopping=True, decoder_min_length=1, length_penalty=0.6, model_path='hashtag_model_final.pt', no_repeat_ngram_size=3), "hashtag_model_final.pt")
 
 kw_extractor = yake.KeywordExtractor(top=10, stopwords=None)
 app = Flask(__name__)
@@ -41,9 +41,9 @@ def my_form():
             for hashtag, cs in hashtaglist:
                 t = t + " #" + hashtag
 
-        if option == "stance":
-            t = generator.generate(doc)
-       
+        # if option == "stance":
+            # t = generator.generate(doc)
+
         if t== "":
             t = "No Hashtags Generated!! Please enter a valid text."
         

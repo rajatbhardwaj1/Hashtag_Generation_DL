@@ -1,0 +1,76 @@
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+Stage 1: Keys after executing optim.set_parameters(model.parameters())
+optim.optimizer.state_dict()['state'] keys: 
+optim.optimizer.state_dict()['param_groups'] elements: 
+optim.optimizer.state_dict()['param_groups'] element: {'lr': 0.001, 'betas': [0.9, 0.999], 'eps': 1e-09, 'weight_decay': 0, 'amsgrad': False, 'params': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]}
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_45.91_ppl_36.76_e1.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_59.02_ppl_13.92_e2.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_63.02_ppl_10.50_e3.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_64.05_ppl_10.09_e4.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_64.63_ppl_10.33_e5.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_65.53_ppl_9.86_e6.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_66.07_ppl_10.06_e7.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_65.87_ppl_10.38_e8.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_66.04_ppl_10.47_e9.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_66.10_ppl_10.53_e10.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_66.12_ppl_10.57_e11.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_66.09_ppl_10.59_e12.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_66.11_ppl_10.60_e13.pt
+../processed_data/Weibo_src50_conv100_tgt10_v50000.train.1.pt
+hi
+../processed_data/Weibo_src50_conv100_tgt10_v50000.valid.1.pt
+hi
+Saving model into saved_models/Weibo_BiAttEncoder_rnn_200emb_seed100_acc_66.11_ppl_10.61_e14.pt
