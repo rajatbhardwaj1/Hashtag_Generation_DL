@@ -1,3 +1,4 @@
 sh/saved_models
 env
 sh/prediction
+*.pt
